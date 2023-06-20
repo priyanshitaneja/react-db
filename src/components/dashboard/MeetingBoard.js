@@ -18,26 +18,22 @@ const meetings = [
 const MeetingBoard = ({ title }) => {
   const [meetingData, setMeetingData] = useState([]);
 
-  const simulateFetch = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(meetings);
-      }, 100);
-    });
-  }
+  const sleep = (ms) =>
+    new Promise((resolve) => setTimeout(() => resolve(meetings), ms));
 
   const fakeFetch = async () => {
-    const fetchedMeetings = await simulateFetch();
+    const fetchedMeetings = await sleep(1000);
     setMeetingData(fetchedMeetings);
-  }
+  };
 
+  //to give an effect of fetching.
   useEffect(() => {
     fakeFetch();
   }, []);
 
   const renderMeetings = () => {
     if (!meetingData.length) {
-      return <div className="font-lato text-4xl">No meetings Today!</div>;
+      return <div className="font-lato text-md">No meetings Today!</div>;
     }
     return meetings.map((meeting) => {
       return (
@@ -64,9 +60,7 @@ const MeetingBoard = ({ title }) => {
           See All
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center">
-        {renderMeetings}
-      </div>
+      <div className="flex flex-col">{renderMeetings()}</div>
     </div>
   );
 };
