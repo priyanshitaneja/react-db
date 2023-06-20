@@ -12,13 +12,6 @@ class Dashboard extends Component {
   render() {
     const { user } = this.props.auth;
 
-    // let dashboardContent;
-    // dashboardContent = (
-    //   <div>
-    //     <p className="lead text-muted">Welcome {user.name}</p>
-    //   </div>
-    // );
-
     return (
       <div className="flex h-screen flex-row p-10 gap-[50px] bg-[#dddddd]">
         <SideBar />
