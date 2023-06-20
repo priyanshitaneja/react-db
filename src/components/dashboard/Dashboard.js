@@ -10,8 +10,6 @@ import CardRow from "./CardRow";
 
 class Dashboard extends Component {
   render() {
-    const { user } = this.props.auth;
-
     return (
       <div className="flex h-screen flex-row p-10 gap-[50px] bg-[#dddddd]">
         <SideBar />

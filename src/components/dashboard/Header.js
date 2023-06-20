@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import SearchBar from "./../common/SearchBar";
 import { ReactComponent as BellIcon } from "../../assets/Vector.svg";
 import { ReactComponent as UserImg } from "../../assets/user_img.svg";
 
@@ -9,7 +10,7 @@ const Header = ({ auth }) => {
         <div className="flex justify-between mb-10">
             <h1 className="text-2xl	font-bold">Dashboard</h1>
             <div className="flex items-center">
-                <input className="mr-[10px]" />
+                <SearchBar className="mr-[10px]" style={{height: "100%-80px"}} />
                 <BellIcon className="mr-2 ml-5" />
                 {
                     auth.isAuthenticated ?
