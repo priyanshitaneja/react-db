@@ -52,9 +52,9 @@ const MeetingBoard = ({ title }) => {
   };
 
   return (
-    <div className="w-1/2 bg-white rounded-2xl py-7 px-10">
+    <div className="w-1/2 bg-white rounded-2xl p-4 lg:py-7 lg:px-10">
       <div className="flex justify-between mb-6">
-        <h4 className="font-montserrat text-lg font-bold ">{title}</h4>
+        <div className="font-montserrat text-base lg:text-lg font-bold ">{title}</div>
         <div className="border-none font-lato text-sm text-[#666666] self-center cursor-pointer">
           {" "}
           See All

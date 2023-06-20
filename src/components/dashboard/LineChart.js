@@ -55,8 +55,8 @@ const options = {
 
 const LineChart = ({ title }) => {
   return (
-    <div className="relative bg-white rounded-2xl py-7 px-10" style={{ height: "359px" }}>
-      <h4 className="font-montserrat text-lg font-bold mb-1">{title}</h4>
+    <div className="relative bg-white rounded-2xl p-4 lg:py-7 lg:px-10" style={{ height: "359px" }}>
+      <h4 className="font-montserrat md:text-base lg:text-lg font-bold mb-1">{title}</h4>
       <div className="absolute left-[30px] right-[30px] bottom-[30px]" style={{ height: "267px" }}>
         <Line width={10} options={options} data={data} />
       </div>

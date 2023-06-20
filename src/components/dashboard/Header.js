@@ -7,8 +7,8 @@ import { ReactComponent as UserImg } from "../../assets/user_img.svg";
 
 const Header = ({ auth }) => {
     return (
-        <div className="flex justify-between mb-10">
-            <h1 className="text-2xl	font-bold">Dashboard</h1>
+        <div className="flex justify-between mb-3 md:mb-5 lg:mb-10">
+            <h1 className="text-base md:text-lg lg:text-2xl	font-bold">Dashboard</h1>
             <div className="flex items-center">
                 <SearchBar className="mr-[10px]" style={{height: "100%-80px"}} />
                 <BellIcon className="mr-2 ml-5" />

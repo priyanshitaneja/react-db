@@ -50,8 +50,8 @@ const options = {
 
 const PieChart = () => {
   return (
-    <div className="bg-white w-1/2 rounded-2xl py-7 px-10">
-      <h4 className="font-montserrat text-lg font-bold mb-1">Activities</h4>
+    <div className="bg-white w-1/2 rounded-2xl p-4 lg:py-7 lg:px-10">
+      <div className="font-montserrat text-base lg:text-lg font-bold mb-1">Activities</div>
       <div className="mt-6 h-36 w-full">
         <Pie options={options} data={dataSet} style={{ width: "100%" }} />
       </div>

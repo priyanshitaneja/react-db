@@ -7,29 +7,29 @@ import { ReactComponent as TotalRevenue } from "../../assets/total_revenue.svg";
 
 const CardRow = () => {
     return (
-        <div className="flex justify-between mb-[40px] gap-x-9">
+        <div className="flex justify-between mb-[20px] lg:mb-[40px] gap-x-9">
             <Card
                 name={"Total Revenues"}
                 quantity={"$2,129,430"}
-                icon={<TotalRevenue />}
+                icon={<TotalRevenue className="h-[14px] md:h-[18px] lg:h-[24px]" />}
                 bg={"#DDEFE0"}
             />
             <Card
                 name={"Total Transactions"}
                 quantity={"1,520"}
-                icon={<TotalTransactions />}
+                icon={<TotalTransactions className="h-[14px] md:h-[18px] lg:h-[24px]" />}
                 bg={"#F4ECDD"}
             />
             <Card
                 name={"Total Likes"}
                 quantity={"9,721"}
-                icon={<TotalLikes />}
+                icon={<TotalLikes className="h-[14px] md:h-[18px] lg:h-[24px]" />}
                 bg={"#EFDADA"}
             />
             <Card
                 name={"Total Users"}
                 quantity={"892"}
-                icon={<TotalUsers />}
+                icon={<TotalUsers className="h-[14px] md:h-[18px] lg:h-[24px]" />}
                 bg={"#DEE0EF"}
             />
         </div>

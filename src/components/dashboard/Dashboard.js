@@ -11,7 +11,7 @@ import CardRow from "./CardRow";
 class Dashboard extends Component {
   render() {
     return (
-      <div className="flex h-screen flex-row p-10 gap-[50px] bg-[#dddddd]">
+      <div className="flex max-h-max flex-row p-4 lg:p-10 gap-[20px] lg:gap-[50px] bg-[#dddddd]">
         <SideBar />
         <div className="w-4/5">
           <Header />
